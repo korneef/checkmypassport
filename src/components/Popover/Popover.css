@@ -1,0 +1,11 @@
+.status-checker__form-popover {
+  position: absolute;
+  top:0;
+  left:0;
+  border: 1px solid #676767;
+  border-radius: 15px;
+
+  background-color: #fde3e3;
+  padding: 15px;
+  box-shadow: 3px 3px 5px #cdcdcd;
+}

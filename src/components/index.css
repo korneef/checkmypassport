@@ -1,1 +1,4 @@
 @import url('./MainPage/MainPage.css');
+@import url('./MainStatus/MainStatus.css');
+@import url('./StatusRequestForm/StatusRequestForm.css');
+@import url('./Popover/Popover.css')

@@ -1,0 +1,39 @@
+.status-checker {
+  padding: 0 10px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-checker__header {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-checker__loader {
+  height: 30px;
+}
+
+.status-checker__footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #efefef;
+  border-top: 1px solid #bababa;
+  text-align: center;
+  height: 50px;
+  color: #828282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-checker__footer-link {
+  text-decoration: none;
+  color: #828282;
+}

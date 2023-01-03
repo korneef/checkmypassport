@@ -1,0 +1,37 @@
+.status-checker__form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.status-checker__form-input {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.status-checker__form-input:active, .status-checker__form-input:focus {
+  outline: none;
+}
+
+.status-checker__form-button {
+  display: block;
+  padding: 8px 15px;
+  margin: 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4f68da;
+  color: #ffffff;
+}
+
+.status-checker__form-button:hover {
+  background-color: #304395;
+}

@@ -1,1 +1,5 @@
-@import url('./components/index.css')
+@import url('./components/index.css');
+
+html, body {
+  height: 100%
+}

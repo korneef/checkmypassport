@@ -1,5 +1,5 @@
 //atoms import
-import Header from "./Atoms/Header/Header";
+import HeaderElement from "./Atoms/HeaderElement/HeaderElement";
 import TextBlock from "./Atoms/TextBlock/TextBlock";
 import ErrorLoading from "./Atoms/ErrorLoading/ErrorLoading";
 //molecules import
@@ -12,7 +12,7 @@ import MainStatus from "./Organisms/MainStatus/MainStatus";
 import MainPage from "./Pages/MainPage/MainPage";
 
 //atoms export
-export { Header, TextBlock, ErrorLoading };
+export { HeaderElement, TextBlock, ErrorLoading };
 //molecules export
 export { Popover, StatusExplanation};
 //organisms export

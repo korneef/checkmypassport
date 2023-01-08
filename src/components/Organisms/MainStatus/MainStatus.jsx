@@ -1,4 +1,4 @@
-import { StatusExplanation, Header, TextBlock } from "../../index"
+import { StatusExplanation, HeaderElement, TextBlock } from "../../index"
 
 
 export default function MainStatus({ pasportData }) {
@@ -7,13 +7,13 @@ export default function MainStatus({ pasportData }) {
 
   return (
     <div className="status-cheker__wrapper">
-      <Header className={headerClass}>Статус с сайта info.midpass.ru</Header>
+      <HeaderElement className={headerClass}>Статус с сайта info.midpass.ru</HeaderElement>
       <TextBlock className={descriptionClass}>{pasportData.passportStatus.name}</TextBlock>
-      <Header className={headerClass}>Прогресс в процентах с сайта info.midpass.ru</Header>
+      <HeaderElement className={headerClass}>Прогресс в процентах с сайта info.midpass.ru</HeaderElement>
       <TextBlock className={descriptionClass}>{pasportData.internalStatus.percent}%</TextBlock>
-      <Header className={headerClass}>Расширенный статус с сайта info.midpass.ru</Header>
+      <HeaderElement className={headerClass}>Расширенный статус с сайта info.midpass.ru</HeaderElement>
       <TextBlock className={descriptionClass}>{pasportData.internalStatus.name}</TextBlock>
-      <Header className={headerClass}>Расшифровка статуса (по открытой информации в интернете)</Header>
+      <HeaderElement className={headerClass}>Расшифровка статуса (по открытой информации в интернете)</HeaderElement>
       <TextBlock className={descriptionClass}>
         <StatusExplanation pasportData={pasportData} />
       </TextBlock>

@@ -1,8 +1,21 @@
-import MainPage from "./MainPage/MainPage";
-import StatusRequestForm from "./StatusRequestForm/StatusRequestForm";
-import MainStatus from "./MainStatus/MainStatus";
-import StatusExplanation from "./StatusExplanation/StatusExplanation";
-import Popover from "./Popover/Popover";
-import ErrorLoading from "./ErrorLoading/ErrorLoading";
+//atoms import
+import Header from "./Atoms/Header/Header";
+import TextBlock from "./Atoms/TextBlock/TextBlock";
+import ErrorLoading from "./Atoms/ErrorLoading/ErrorLoading";
+//molecules import
+import Popover from "./Molecules/Popover/Popover";
+import StatusExplanation from "./Molecules/StatusExplanation/StatusExplanation";
+//organisms import
+import StatusRequestForm from "./Organisms/StatusRequestForm/StatusRequestForm";
+import MainStatus from "./Organisms/MainStatus/MainStatus";
+//pages import
+import MainPage from "./Pages/MainPage/MainPage";
 
-export { MainPage, StatusRequestForm, StatusExplanation, MainStatus, Popover, ErrorLoading }
+//atoms export
+export { Header, TextBlock, ErrorLoading };
+//molecules export
+export { Popover, StatusExplanation};
+//organisms export
+export { StatusRequestForm, MainStatus };
+//Pages export
+export { MainPage };

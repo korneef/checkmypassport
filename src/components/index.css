@@ -1,4 +1,4 @@
-@import url('./MainPage/MainPage.css');
-@import url('./MainStatus/MainStatus.css');
-@import url('./StatusRequestForm/StatusRequestForm.css');
-@import url('./Popover/Popover.css')
+@import url('./Pages/MainPage/MainPage.css');
+@import url('./Organisms/MainStatus/MainStatus.css');
+@import url('./Organisms/StatusRequestForm/StatusRequestForm.css');
+@import url('./Molecules/Popover/Popover.css')

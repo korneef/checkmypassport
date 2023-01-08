@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { StatusRequestForm, MainStatus, ErrorLoading } from "../index";
+import { StatusRequestForm, MainStatus, ErrorLoading } from "../../index";
 
 export default function MainPage(props) {
   const [form, setForm] = useState({ uid: '', popover: false });

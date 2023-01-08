@@ -23,6 +23,3 @@ export default function Popover({ children, formCoords }) {
     </div>
   )
 }
-
-// popower.style.top = `${button.offsetTop - popower.offsetHeight}px`;
-// popower.style.left = `${button.offsetLeft + button.offsetWidth / 2 - popower.offsetWidth / 2}px`;

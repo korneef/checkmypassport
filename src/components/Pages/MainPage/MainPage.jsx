@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { StatusRequestForm, MainStatus, ErrorLoading } from "../../index";
 
 export default function MainPage(props) {
@@ -8,6 +8,15 @@ export default function MainPage(props) {
     data: null,
     failLoad: false
   });
+
+  useEffect(() => {
+    const uidFromLocalstorage = localStorage.getItem('uid');
+    if (uidFromLocalstorage !== null) {
+      setForm(prevForm => {
+          return { ...prevForm, uid: uidFromLocalstorage};
+      })
+    }
+  }, [])
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
@@ -28,13 +37,13 @@ export default function MainPage(props) {
       return
     }
     setPasportData(preventData => ({ ...preventData, isLoading: true, failLoad: false }))
-
     fetch(`${process.env.REACT_APP_SERVER_URL}${evt.target['uid'].value}`)
       .then(response => {
         if (response.status === 200) return response.json()
         throw new Error('Network response was not ok.')
       })
       .then(data => {
+        localStorage.setItem('uid', form.uid)
         setPasportData(preventData => ({ ...preventData, isLoading: false, data: data }))
       })
       .catch(error => {

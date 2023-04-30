@@ -2,4 +2,4 @@
 
 Проект предназначен для проверки статуса изготовления заграничного паспорта РФ на 10 лет.
 
-Ссылка на проект https://korneef.github.io/checkmypassport
+Ссылка на проект https://checkmypassport.ru
